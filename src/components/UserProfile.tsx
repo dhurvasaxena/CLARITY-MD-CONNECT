@@ -3,6 +3,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { MapPin, Calendar, Users, Eye } from 'lucide-react';
+import FindDoctorMap from '@/components/FindDoctorMap';
 
 export default function UserProfile() {
   return (
@@ -55,6 +56,8 @@ export default function UserProfile() {
             Edit Profile
           </Button>
         </div>
+        {/* Map widget under Edit Profile */}
+        <FindDoctorMap />
       </CardContent>
     </Card>
   );
